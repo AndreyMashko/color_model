@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/palette.css" />
+    <script src="./js/colorpicker.min.js"></script>
+  </head>
+  <body>
+    <div class="palette clear-fix">
+      <div id="color-picker" class="cp-default">
+        <div class="picker-wrapper">
+            <div id="picker" class="picker"></div>
+            <div id="picker-indicator" class="picker-indicator"></div>
+        </div>
+        <div class="pcr-wrapper">
+            <div id="pcr" class="pcr"></div>
+            <div id="pcr-indicator" class="pcr-indicator"></div>
+        </div>
+        <ul id="color-values">
+            <li><div id="pcr_bg"></div></li>
+        </ul>
+      </div>
+    </div>
+    <div class="main_container">
+      <div class="RGB">
+        <ul>
+          <li class="slide_container">
+            <p>R</p>
+            <input type="range" min="0" max="255" value="255"  index="0" class="item slide">
+            <input type="number" min="0" max="255" value="255" index="0" class="item iput_field"/>
+          </li>
+          <li class="slide_container">
+            <p>G</p>
+            <input type="range" min="0" max="255" value="0" index="1" class="item slide">
+            <input type="number" min="0" max="255" value="0" index="1" class="item iput_field"/>
+          </li>
+          <li class="slide_container">
+            <p>B</p>
+            <input type="range" min="0" max="255" value="0" index="2" class="item slide">
+            <input type="number" min="0" max="255" value="0" index="2" class="item iput_field"/>
+          </li>
+        </ul>
+    </div>
+
+    <div class="CMYK">
+      <ul>
+        <li class="slide_container">
+          <p>C</p>
+          <input type="range" min="0" max="100" value="255"  index="0" class="item slide">
+          <input type="number" min="0" max="100" value="255" index="0" class="item iput_field"/>
+        </li>
+        <li class="slide_container">
+          <p>M</p>
+          <input type="range" min="0" max="100" value="0" index="1" class="item slide">
+          <input type="number" min="0" max="100" value="0" index="1" class="item iput_field"/>
+        </li>
+        <li class="slide_container">
+          <p>Y</p>
+          <input type="range" min="0" max="100" value="0" index="2" class="item slide">
+          <input type="number" min="0" max="100" value="0" index="2" class="item iput_field"/>
+        </li>
+        <li class="slide_container">
+          <p>K</p>
+          <input type="range" min="0" max="100" value="0" index="2" class="item slide">
+          <input type="number" min="0" max="100" value="0" index="2" class="item iput_field"/>
+        </li>
+      </ul>
+  </div>
+  <div class="HSL">
+    <ul>
+      <li class="slide_container">
+        <p>H</p>
+        <input type="range" min="0" max="100" value="255"  index="0" class="item slide">
+        <input type="number" min="0" max="100" value="255" index="0" class="item iput_field"/>
+      </li>
+      <li class="slide_container">
+        <p>L</p>
+        <input type="range" min="0" max="100" value="0" index="1" class="item slide">
+        <input type="number" min="0" max="100" value="0" index="1" class="item iput_field"/>
+      </li>
+      <li class="slide_container">
+        <p>S</p>
+        <input type="range" min="0" max="100" value="0" index="2" class="item slide">
+        <input type="number" min="0" max="100" value="0" index="2" class="item iput_field"/>
+      </li>
+    </ul>
+</div>
+<div class="LUV">
+  <ul>
+    <li class="slide_container">
+      <p>L</p>
+      <input type="range" min="0" max="100"  step="0.000001" index="0" class="item slide">
+      <input type="number" min="0" max="100" step="0.000001" index="0" class="item iput_field"/>
+    </li>
+    <li class="slide_container">
+      <p>u</p>
+      <input type="range" min="-87.735901" max="178.567871" step="0.000001" value="0" index="1" class="item slide">
+      <input type="number" min="-87.735901" max="178.567871" step="0.000001" value="0" index="1" class="item iput_field"/>
+    </li>
+    <li class="slide_container">
+      <p>v</p>
+      <input type="range" min="-133.345917" max="105.534561" step="0.000001" value="0" index="2" class="item slide">
+      <input type="number" min="-133.345917" max="105.534561"  step="0.000001" value="0" index="2" class="item iput_field"/>
+    </li>
+  </ul>
+</div>
+      <script src="./js/main.js"></script>
+    </div>
+  </body>
+</html>

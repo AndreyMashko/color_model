@@ -1,0 +1,39 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.slide_container{
+  display: flex;
+  justify-content: center;
+}
+
+.slide{
+  opacity: 0.7;
+  transition: opacity .2s;
+}
+
+.slide:hover {
+    opacity: 1;
+}
+
+.item{
+  margin-left: 10px;
+}
+
+li{
+  margin-bottom: 10px;
+}
+.main_container{
+  display: flex;
+  justify-content: center;
+  background-color: rgb(255, 0, 0);
+  height: 500px;
+  margin-top: 30px;
+}
+
+.clear-fix::after{
+  display: block;
+  content: "";
+  clear: both;
+}
